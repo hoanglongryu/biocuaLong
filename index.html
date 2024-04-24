@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio của Long</title>
+    <link href='https://fonts.googleapis.com' rel='preconnect'/>
+    <link crossorigin='anonymous' href='https://fonts.gstatic.com' rel='preconnect'/>
+    <script crossorigin='anonymous' src='https://kit.fontawesome.com/5468db3c8c.js'></script>
+    <!--script src='/jquery.min.js'></script-->
+    <script src='https://cdn.jsdelivr.net/npm/sweetalert2@9'></script>
+    <!--link href='/anim-text-flow-keys.css' rel='stylesheet'/-->
+    <link href='jscss.effect/anh-quay-360.css' rel='stylesheet'/>
+    <link href='img/lychan.iconweb.jpg' rel='icon' type=''/>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body onclick='playAudioOnce()' class="hide-scrollbar">
+<!--Loading-->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+        <div id='loading'><noscript>javascript không đc hỗ trợ hoặc bạn đã tắt, hãy bật nó lên hoặc sử dụng trình duyện như Google chrome, Microsoft edge, Coc Coc,...</noscript>
+<center>
+    <div class='center'>
+        <div class='lds-ripple'><div></div><div></div></div>
+        </div>
+</center>
+    </div>
+<script>
+        $(window).on('load', function() {
+            setTimeout(function() {
+                $('#loading').fadeOut('slow', function() {
+                    $(this).remove();
+                });
+            }, 1500);
+        });
+    </script>
+<!--FPS-->
+<a style='color:red; font-family: monospace;'>
+    <tc>HOANGLONGRYU.BLOGSPOT.COM  <span id='fps'>00.0</span> FPS</tc></a>
+<button class='musicButton' onclick='toggleAudio(event)'></button>
+<br/>
+<script type='text/javascript'>
+  var fps = document.getElementById("fps");
+  var startTime = Date.now();
+  var frame = 0;
+  	function tick(){var time = Date.now();
+ 	 frame++;
+  		if(time - startTime > 1000){fps.innerHTML = (frame / ((time - startTime) / 1000)).toFixed(1);
+  		startTime = time;frame = 0;
+  	}window.requestAnimationFrame(tick);
+  }tick();
+</script>
+<center>
+    <br/>
+    <div class='content'>
+        <div class='header'>
+<!--Avt-->
+    <img class='avatar' id='myImage' onmouseover='playSound()' src='img/atv.jpg' title='hoanglongryu' width='100'/>
+</div>
+    <h3>Hoàng Lưu Hiển <!--img src="https://cdn.discordapp.com/attachments/1024280793402576940/1075420403041845318/tick-xam.png" title="Verified"--></h3>
+    <h4 class='text anim-text-flow'></h4>
+    <h5>Chưa nghĩ ra đc gì cho dòng này.:3</h5>
+</div>
+<!--FB-->
+<div>
+    <button class='button' onclick='openInNewTab("https://www.facebook.com/hoanglongryu");' title='Facebook'>
+    <font color='white' size='5'><i class='fab fa-facebook'></i> Facebook</font><br/>
+</button>
+</div>
+<!--Mess-->
+<div>
+    <button class='button' onclick='openInNewTab("https://www.messenger.com/t/100045808422935/");' title='Messenger'>
+    <font color='white' size='5'><i class='fab fa-facebook-messenger'></i> Messenger </font><br/>
+</button>
+</div>
+<!--Zalo-->
+<div>
+    <button class='button' onclick='openInNewTab("https://linkfilex.blogspot.com/2022/12/zalo.html");' title='Zalo'>
+    <font color='white' size='5'><img alt='icon_zalo(vn)' style="color:white" src='svg/icons8-zalo-23.svg'/> Zalo </font><br/>
+</button>
+</div>
+<script src='https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js'></script>
+<!--Tiktok-->
+<div>
+    <button class='button' onclick='openInNewTab("https://linkfilex.blogspot.com/2022/12/tiktok.html");' title='Tiktok'>
+    <font color='white' size='5'><i class='fa-brands fa-tiktok'></i> Tiktok </font><br/>
+</button></div>
+<script>
+function openInNewTab(url) {
+  var win = window.open(url, '_blank');
+  win.focus();
+}
+</script>
+</center>
+<!--Chay hinh-->
+    <!--marquee behavior='scroll' direction='left' scrollamount='2' scrolldelay='20' width='98%'>
+        <font color='#ffffff' face='Tahoma' size='0.1'><img class='obito' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijxnSiQM65YnDouJ2l6lRYKhmuU76-fb48Qn591bITMilWJyLtxfNPQMUk7r33z2gsfHz3c2fciXL5sUgZdNO34-Bx_u-FwM4LO1Rd3Yia3xoi2Wr3mMyqmWj_KeUe1Gu9ohg_MNU2jt7ewPIGPbCjgd4Ho70j66dm09oFuoehGCVyucpt_tpgvV0wVTo/s576/anhgiucgiuc.gif' title='kamui' width='50'/>
+</font>
+</marquee--><br/>
+    <font size='2'>
+<center><text>
+    <div id='time'></div>
+</text></center>
+</font>
+<!--script-->
+<!--tha tim-->
+<script src='jscss.effect/click-tha-tim.js'></script>
+<!--phao-->
+<script src='jscss.effect/phaohoaclick.js'></script>
+<!--timenow-->
+<span id='time'/>
+<!--adu-->
+<audio id='mySound' src='audio/atdu.mp3'/>
+    <script src="scripts.js"></script>
+<!--Một số chi tiết được lấy cảm hứng từ những người khác.-->
+</body>
+</html>
