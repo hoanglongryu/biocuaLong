@@ -216,3 +216,7 @@ animation: 8s BeProud linear infinite;}
     opacity: 0;
   }
 }
+.laplanh{
+  background-image:url(https://raw.githubusercontent.com/hoanglongryu/biocuaLong/main/img/bg1.webp);
+  background-repeat: no-repeat;
+}
