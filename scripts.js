@@ -31,7 +31,7 @@ var frame = 0;
 }tick();
 
 //music
-var audio = new Audio('audio/meiyo_naniyattemoumakuikani_asmi.mp3');
+var audio = new Audio('audio/25.mp3');
 var button = document.querySelector('button');
 audio.loop = true;
 function playAudioOnce() {
